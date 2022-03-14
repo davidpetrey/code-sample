@@ -1,0 +1,874 @@
+
+<div class="new-page-container">
+	<link rel="stylesheet" type="text/css" media="all" href="https://images.lennoxpros.com/is/content/LennoxIntl/web-dev/other/js/slick.css">
+	<link rel="stylesheet" type="text/css" media="all" href="https://images.lennoxpros.com/is/content/LennoxIntl/web-dev/other/js/slick-theme.css">
+
+
+	<style>
+		.btn { display: inline-block; font-weight: 400; color: #212529; text-align: center; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: transparent; border: 1px solid transparent; padding: .375rem .75rem; font-size: 16px; line-height: 1.5; -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; text-transform: none; text-decoration: none !important } .btn-primary { color: #fff; background-color: #c60c35; border-color: #c60c35; text-transform: capitalize; font-weight: 700; border-radius: 4px; padding: 10px 40px; font-size: 15px; -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2) } .btn-primary:focus, .btn-primary:hover { background-color: #8b0013; border-color: #8b0013; color: #fff } .btn-secondary { color: #c60c35; background-color: #fff; border-color: #222; text-transform: uppercase; font-weight: 700; border-radius: 4px; padding: 10px 20px; font-size: 15px; border-width: 3px; -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2) } .btn-secondary:focus, .btn-secondary:hover { text-decoration: underline !important }
+		.new-page-container .btn.btn-primary { max-width: 274px; width: 100%; font-size: 16px; padding-left: 0; padding-right: 0 }
+		.new-page-container { color:#222222 }
+		.new-page-container .white p{ color: #fff!important }
+
+		.new-page-container h1,
+		.new-page-container h2,
+		.new-page-container .h2,
+		.new-page-container h3,
+		.new-page-container .h3 { margin-top: 0; margin-bottom: 0; font-weight: 500; font-family: "Maven Pro" }
+		.new-page-container h1 { font-size: 36px }
+		.new-page-container h2,
+		.new-page-container .h2 { font-size: 36px }
+		.new-page-container h3,
+		.new-page-container .h3 { font-size: 30px }
+		.new-page-container p { font-size: 17px }
+		.new-page-container .maven { font-family: "Maven Pro" }
+
+		.new-page-container .align-left { text-align: left }
+		.new-page-container .margin-center { margin-left:auto; margin-right:auto; display: block }
+		.new-page-container .desktop { display: none }
+		.new-page-container .mb0 { margin-bottom: 0 }
+		.new-page-container .mb10 { margin-bottom: 10px }
+		.new-page-container .mb15 { margin-bottom: 15px }
+		.new-page-container .mb20 { margin-bottom: 20px }
+		.new-page-container .mb24 { margin-bottom: 24px }
+		.new-page-container .mb30 { margin-bottom: 30px }
+		.new-page-container .mb40 { margin-bottom: 40px }
+
+		/* adds a background color for the parallax container like background-color: */
+		.parallax-mirror:after { content:''; display: block; position: absolute; top: 0; bottom:0; left:0; right:0; z-index: -1; background-color: #021428; }
+		
+		.desktop-control{width: 80%; margin-top: 50px;}
+		.desktop-control .nav-button {
+			width: 100%; font-weight: 500; font-size: 30px; padding: 9px .75rem; border-radius: 4px; box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2)
+		}
+		.desktop-control .nav-button.active { color: #C60C36;}
+
+		.desktop-control .row div:nth-child(2){
+			margin: 40px 0;
+		}
+		.new-page-container .desktop{ display: inline-block;}
+
+		/* ----------- iPhone X ----------- */
+
+		@media only screen
+			/* and (min-device-width: 375px)  */
+		and (max-device-width: 812px)
+		and (-webkit-min-device-pixel-ratio: 3) {
+			.why-more-options { background-attachment: scroll!important }
+			/* .btn { background-color: green!important } */
+		}
+
+		@media only screen
+			/* and (min-device-width: 375px)  */
+		and (max-device-width: 812px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+			.why-more-options { background-attachment: scroll!important }
+			/* .btn { background-color: grey!important } */
+		}
+
+		/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+		@media only screen
+		and (min-device-width: 768px)
+		and (max-device-width: 1024px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+			.why-more-options { background-attachment: scroll!important }
+			/* .btn { background-color: blue!important } */
+		}
+
+		/* ----------- iPad Pro 12.9" ----------- */
+		@media only screen
+		and (min-device-width: 1024px)
+		and (max-device-width: 1366px)
+		and (-webkit-min-device-pixel-ratio: 2) {
+			.why-more-options { background-attachment: scroll!important }
+			/* .btn { background-color: yellow!important } */
+		}
+
+		.new-page-container .container { max-width: 600px; padding: 0 10px; margin-left: auto; margin-right: auto }
+
+		.why-hero .bg {
+			background-color: #021428;
+			background-image: url(https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-banner?scl=1);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.why-hero .container { max-width: none }
+		.why-hero [class^="col-"] {padding: 30px 10px 65px}
+		.why-hero h1 { line-height: 1.3em; font-weight: 400; }
+		.why-hero h2{ font-size: 24px; font-weight: 400;}
+		.why-hero h1 br { display: none }
+
+		@media screen and ( max-width: 400px ) { .why-hero h1 { font-size: 30px } .why-hero [class^="col-"] { padding: 40px 10px 65px } }
+		@media screen and ( max-width: 500px ) { .why-hero .container { max-width: 365px } .why-hero h1 br { display: block } }
+
+		.why-hero-bottom { background-color: #eeeeee; padding-bottom: 20px; }
+		.why-hero-bottom .lt { margin-top: -20px; }
+		.why-hero-bottom .lt img { width: 425px; }
+		.why-hero-bottom .rt { padding: 0 24px }
+		.why-hero-bottom h3 { font-size: 24px; font-weight: 700; margin-bottom: 24px}
+
+
+		/* SLIDER SECTION */
+
+		/* slick slider  */
+		.slider-wrap { padding: 80px 0 0 }
+
+		.slider-wrap .description { max-width: 600px; }
+
+		.slick-dots li,
+		.slick-dots li button,
+		.slick-dots li button img { width: auto; height: auto; padding: 0 }
+
+		.slick-dots li,
+		.slick-dots li button img { margin: 0 }
+		.slick-dots .button-wrap button img { max-width: 53%; }
+
+		.dot-wrap .slick-arrow { display: none!important }
+
+		.dot-wrap ul.slick-dots {
+			position: static;
+			max-width: 300px;
+			margin-left:auto; margin-right:auto;
+			display: flex;
+			align-items: baseline;
+			flex-wrap: wrap;
+		}
+		@media screen and ( min-width: 600px ) { .dot-wrap ul.slick-dots { max-width: 500px } }
+		@media screen and ( min-width: 600px ) { .comm .dot-wrap ul.slick-dots, .service .dot-wrap ul.slick-dots { max-width: 400px } }
+		@media screen and ( min-width: 700px ) { .comm .dot-wrap ul.slick-dots { max-width: 600px } .service .dot-wrap ul.slick-dots{ max-width: 600px; }}
+		@media screen and ( min-width: 800px ) { .service .dot-wrap ul.slick-dots{ max-width: 800px; }}
+
+		.dot-wrap .slick-dots li { width: 100px; display: flex; justify-content: center }
+
+		.slick-dots .button-wrap {margin-bottom: 8px }
+		.slick-dots .button-wrap button:before { content:none!important }
+		
+
+		.slick-dots .button-wrap .hover-bar {
+			background-color: #eeeeee;
+			display: block;
+			margin: 12px auto 3px;
+			height: 4px;
+			width: 60px;
+			transition: all 150ms;
+		}
+		.slick-dots li:hover .button-wrap .hover-bar { background-color: #ddd }
+		.slick-dots li.slick-active .button-wrap .hover-bar { background-color: #C60C36 }
+
+		.slick-dots .button-wrap .hover-text {
+			font-size: 14px;
+			font-weight: 700;
+			font-style: italic;
+			opacity: 0;
+			transition: all 150ms;
+		}
+		.slick-dots li:hover .button-wrap .hover-text  { opacity: .8 }
+		.slick-dots li.slick-active .button-wrap .hover-text { opacity: 1 }
+
+
+
+		.actual-slider .slick-slide { padding-bottom: 60px }
+		.actual-slider.underline:after {
+			content:'';
+			display: block;
+			width: 70%;
+			margin-left:auto; margin-right:auto;
+			border-bottom: 1px solid #cccccc;
+		}
+
+		.actual-slider [class^="col-"] img {
+			width: 80%;
+			max-width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.actual-slider [class^="col-"] img.tall {
+			width: 57%;
+			max-width: 300px;
+		}
+
+		.actual-slider .title.h3 { line-height: 1.3em }
+		.actual-slider .sub { font-size: 20px; line-height: 1.5em }
+		.actual-slider .text { max-width: 600px }
+
+		.why-more-options {
+			background-color: #021428;
+			background-image: url("https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_page-bg2-more-options?scl=1");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.why-more-options .container { max-width: none }
+		.why-more-options [class^="col-"] {padding: 80px 50px 60px}
+		.why-more-options .h2 { font-size: 44px; font-weight: 400;}
+		.why-more-options i { font-size: 50px }
+
+
+
+		.why-lls { padding: 80px 0 40px; overflow-x: hidden }
+		.why-lls h2{ max-width: 400px }
+		.why-lls .rt { position: relative }
+		.why-lls .rt img { width: 130% }
+
+
+		.why-store-locator { padding: 80px 0 20px; background: #eeeeee }
+		.why-store-locator .rt { position: relative; height: 97vw }
+		
+
+		@media screen and ( min-width: 400px ) {
+			.why-store-locator .rt { height: 380px }
+			.why-store-locator .rt img { left: auto; right:0 }
+		}
+		@media screen and ( min-width: 540px ) {
+			.why-store-locator .rt { height: auto }
+			.why-store-locator .rt img {  position:relative }
+			
+		}
+
+
+		.why-end { padding: 80px 0 20px}
+		.why-end .h3 { font-weight: 700; font-size: 24px; max-width: 350px }
+
+
+		@media screen and ( min-width: 768px ) {
+			.new-page-container .desktop { display: block }
+			.new-page-container .mobile { display: none }
+			.new-page-container .container { max-width: 1280px }
+
+			.why-more-options .h2 { font-size: 64px; }
+
+			.why-hero [class^="col-"] {padding: 50px 0  80px}
+			.why-hero h1 { font-weight: 400; font-size: 44px; max-width: 750px }
+			
+
+			.why-hero-bottom { padding-bottom: 30px }
+			.why-hero-bottom .lt { margin-top: -35px }
+			.why-hero-bottom .rt { text-align: center }
+
+
+			.why-slider-section { padding-top: 60px }
+			.why-slider-section .desktop-control,
+			.why-slider-section .description { max-width: 1000px }
+
+
+			.desktop-control .row { display: flex; align-items: center }
+
+			.desktop-control .nav-button {
+				font-weight: 500; font-size: 22px; width: 100%; min-width: 200px; max-width: 210px; padding: 9px .75rem; border-radius: 4px;
+				/* box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2) */
+			}
+			.desktop-control .row div:nth-child(2) { margin: 0 10px }
+
+			.desktop-control .nav-button:hover,
+			.desktop-control .nav-button.active { color: #C60C36; box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2) }
+
+	
+			.slider-wrap { padding-top: 40px }
+
+			.why-slider-section .resources,
+			.why-slider-section .service { display: none }
+
+			.why-slider-section .dot-wrap:before {
+				content:'';
+				display: block;
+				background-color: #cccccc;
+				height: 1px;
+				width: 100%;
+				top: 29.5px;
+				position: relative;
+			}
+
+			.why-slider-section .dot-wrap .wrapper {
+				position: relative;
+				max-width: 600px;
+				margin: auto;
+				background:#ffffff
+			}
+
+			.slider-wrap:not(.resources) .dot-wrap .wrapper { max-width: 700px }
+			.service .dot-wrap .wrapper { max-width: 900px !important;}
+
+			.dot-wrap .slick-arrow { display: block!important }
+			.slick-prev,
+			.slick-next {
+				top: 6px;
+				width: auto;
+				height: auto;
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+			}
+
+			.slick-prev { padding: 10px 16px 10px 15px; left: 5px }
+			.slick-next { padding: 10px 15px 10px 6px; right: 5px }
+
+			.slick-prev:before,
+			.slick-next:before { font-family: "Font Awesome 5 Pro"; font-size: 28px; color:#222 }
+
+
+			.slick-prev:before { content: "\f053" }
+			.slick-next:before { content: "\f054" }
+
+			.actual-slider .text { text-align: center }
+			.actual-slider.underline:after { content: none }
+
+
+			.why-more-options .h2 { max-width: none }
+			.why-more-options [class^="col-"] { padding: 40px 50px 20px }
+
+			.why-lls,
+			.why-store-locator { padding-top: 40px }
+
+			.why-lls .row,
+			.why-store-locator .row { display: flex; flex-direction: column-reverse; }
+
+			.why-lls h2 { max-width: none }
+			.why-end .h3 { max-width: none }
+		}
+
+
+		@media screen and ( min-width: 960px ) {
+			.why-hero h1 { max-width: 890px }
+			.why-hero-bottom .lt img { width: auto }
+			.why-hero-bottom .rt { padding-top: 30px; text-align: left }
+
+			
+			.desktop-control{width: unset; margin-top: unset;}
+			.desktop-control .row div:nth-child(2){margin: unset;}
+			.desktop-control .nav-button { max-width: 276px }
+
+			.actual-slider .slick-slide { padding-bottom: 0px }
+			.actual-slider [class^="col-"] img { width: 100%;  margin-bottom: 20px }
+			.actual-slider [class^="col-"] img.tall { width: 100%; max-width: 300px; margin-bottom: 0 }
+
+			.actual-slider .title { font-size: 36px }
+			.actual-slider .title,
+			.actual-slider .sub,
+			.actual-slider .text { text-align: left; margin-left: 0; max-width: none }
+
+			.actual-slider .btn { margin-left: 0; margin-bottom: 20px }
+
+
+
+			.why-more-options [class^="col-"] { padding: 80px 50px 80px }
+
+
+			.why-lls .row,
+			.why-store-locator .row { display: block; }
+			.why-lls .lt,
+			.why-store-locator .lt { text-align: left }
+			.why-lls .lt h2,
+			.why-store-locator .lt h2 { display: block }
+			.why-lls .rt h2,
+			.why-store-locator .rt h2  { display: none }
+			.why-lls .lt { padding: 30px 10px 0 40px }
+			.why-lls .rt img { width: 710px; max-width: none; }
+
+			.why-store-locator .text { margin-left: 0 }
+			.why-store-locator .lt { float: right; padding-top: 60px }
+			.why-store-locator .rt { float: left; margin-top: -75px; margin-bottom: -50px }
+			.why-store-locator .rt img { max-width: none; width: 685px; left: -35%; }
+
+		}
+
+		@media screen and ( min-width: 1200px ) {
+			.why-hero .bg {
+				/* margin-top: 138px; */
+				background-attachment: fixed;
+			}
+
+
+			.why-hero [class^="col-"] {
+				padding: 50px 0 80px;
+				padding: 4vw 0 4vw;
+			}
+			.why-hero h1 { max-width: 1200px; font-size: 64px; }
+
+
+			.why-lls .lt,
+			.why-lls .rt,
+			.why-store-locator .lt,
+			.why-store-locator .rt  { width: 50% }
+
+			.why-lls { padding: 80px 0 }
+			.why-lls .lt { padding: 50px 110px 0 40px }
+			.why-lls .rt { margin-left: -110px }
+
+			.why-store-locator .lt { padding-left: 160px }
+			.why-store-locator .rt img { left: auto }
+		}
+	</style>
+
+
+
+	<section class="why-hero align-center">
+		<div class="bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="white margin-center mb-4">Perfect Air Begins with Pros.</h1>
+						<h2 class="white"><b>Why Pros?</b> LennoxPros is your online destination with innovative digital solutions that can help you grow your HVAC business.</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="why-hero-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-5 lt mb24">
+					<img class="margin-center" src="https://images.lennoxpros.com/is/image/LennoxIntl/PDP%5Fupdate2?scl=1&fmt=png-alpha" alt="LennoxPros.com">
+				</div>
+				<div class="col-md-12 col-lg-7 rt">
+					<p class="mb30">With over ten-thousand items available on the site, you have access to commercial and residential products, parts and supplies and a robust offering of dealers tools and resources at your disposal.</p>
+					<p class="mb30"> We are with you every step of the way — generating new leads, online ordering, finding product information, and homeowner system access 24/7.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="why-slider-section align-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="desktop-control margin-center desktop">
+						<div class="row">
+							<div class="col-md-4"> <button id="s1" class="nav-button active btn maven"> eCommerce </button> </div>
+							
+							<div class="col-md-4"> <button id="s2" class="nav-button btn maven"> Resources </button> </div>
+							
+							<div class="col-md-4"> <button id="s3" class="nav-button btn maven"> Dealer Tools </button> </div>
+						</div>
+					</div>
+
+
+
+
+					<div class="sliders-container">
+						
+						<div class="comm s1 slider-wrap">
+							<div class="title h2 mb10 mobile">eCommerce</div>
+							<p class="description margin-center"><b>Order With Confidence.</b><br>Where HVAC Pros Go to Purchase and Manage Orders for the Products Needed to Get the Job Done.</p>
+														
+							<div class="dot-wrap mb10">
+								<div class="wrapper">
+									<button class="slick-next">Next</button>
+									<div class="dots"></div>
+									<button class="slick-prev">Previous</button>
+								</div>
+							</div>
+							
+							<div class="comm-slider actual-slider mb0 underline">
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-catalog-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros.com"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Online Product Catalog</h3>
+										<p class="sub maven align-center mb20"><b>For All Your HVAC Needs.</b></p>
+										<p class="text margin-center">From OEM repair parts and equipment to aftermarket parts and supplies, view imagery, videos, accessories, and specifications all in one place.</p>
+										<a href="/residential/c/r100" class="btn btn-primary margin-center"> Your HVAC Resource</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-pricing-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros online store"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Pricing and Availability</h3>
+										<p class="sub maven align-center mb20"><b>	Reduce Truck Rolls and Save Time.</b></p>
+										<p class="text margin-center">We have your business and convenience in mind, so you always have access to real time pricing and availability for parts and equipment in your area. We also now have new and improved search capabilities to better serve you.</p>
+										<a href="/residential/c/r100" class="btn btn-primary margin-center"> Shop Now</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-account-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros account tools"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Account and User Management</h3>
+										<p class="sub maven align-center mb20"><b>Stay on Top of Your Orders, and Never Miss a Beat.</b></p>
+										<p class="text margin-center">Managing your account with LennoxPros is easier than ever. View and monitor your orders and status of returns, saved carts, and keep track of your statements at anytime, anywhere!</p>
+										<a href="/partner-resources/account" class="btn btn-primary margin-center"> View Account</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="tall mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-mobile-app-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros mobile app"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Mobile App</h3>
+										<p class="sub maven align-center mb20"><b>Fast, Easy Access to Your Top Tools Is Just a Tap Away.</b></p>
+										<p class="text margin-center">Search by Part, Serial or Model number to easily find OEM Repair Parts on your desktop or mobile device.  In the LennoxPros mobile app, use the bar code scanner to scan the bar codes on Lennox equipment. </p>
+										<a href="https://apps.apple.com/us/app/davenet/id870321742" class="btn btn-primary margin-center"> Get Started</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/repair-part-finder?scl=1&fmt=png-alpha" alt="Lennox repair part lookup tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Repair Part Finder</h3>
+										<p class="sub maven align-center mb20"><b>Fast, Convenient, on the Job or in the Shop. </b></p>
+										<p class="text margin-center">After identifying your part, you can save, email or print your cart when you’re ready to order.</p>
+										<a href="/hvac-repair-part-finder" class="btn btn-primary margin-center"> Find OEM Parts</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="tall mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-ahri-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros ahri matchup tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10"> AHRI Matchup </h3>
+										<p class="sub maven align-center mb20"><b> You’re Guaranteed a Perfect Match Every Time. </b></p>
+										<p class="text margin-center"> It doesn’t matter if you’re matching heat pumps, Mini-Splits or furnaces, your equipment and components are AHRI certified. No more saving scraps of paper with reference numbers or reams of spreadsheets to match systems. </p>
+										<a href="/ahri" class="btn btn-primary margin-center"> AHRI Matchup Tool </a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+
+						<div class="resources s2 slider-wrap">
+							<div class="title h2 mb10 mobile">Resources</div>
+							<p class="description margin-center"><b>The Resources you Need to Succeed as a Dealer.</b><br>Self-Service to Meet Your Needs, Anytime, Anywhere. From Training to Warranty to Marketing – You’re Covered.</p>
+							
+							<div class="dot-wrap mb10">
+								<div class="wrapper">
+									<button class="slick-next">Next</button>
+									<div class="dots"></div>
+									<button class="slick-prev">Previous</button>
+								</div>
+							</div>
+							
+							<div class="resources-slider actual-slider mb0 underline">
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-warranty-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros warranty lookup tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Warranty Lookup</h3>
+										<p class="sub maven align-center mb20"><b>Access the Warranty Status of Any Product — In Seconds</b></p>
+										<p class="text margin-center">Whether you’re in an attic, crawlspace or outside, residential or commercial, all you need is the serial number to get access to the warranty information you need. In the LennoxPros mobile app, use the barcode scanner to find warranty information even faster.</p>
+										<a href="/partner-resources/app/warranty-tools" class="btn btn-primary margin-center"> Look It Up</a>
+									</div>
+								</div>
+
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lenoxpros-learning-solution?scl=1&fmt=png-alpha" alt="Lennox HVAC training courses"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10"> Learning Solutions </h3>
+										<p class="sub maven align-center mb20"><b> Trained Teams Win Deals, Learn New Skills, and Manage Their Time Better.</b></p>
+										<p class="text margin-center"> With new digital technology constantly evolving and the need for HVAC certification, Lennox Learning Solutions (LLS) can help. Our three-leveled, deeply focused BuildATech® courses can get your techs up to speed and back out into the field within two weeks — ready to go. </p>
+										<a href="/hvac-training" class="btn btn-primary margin-center"> Go to HVAC Training </a>
+									</div>
+								</div>
+
+								
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lenoxpros-marketing_1?scl=1&fmt=png-alpha" alt="marketing to homeowners"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10"> Marketing </h3>
+										<p class="sub maven align-center mb20"><b>Good Marketing Makes Your Company Look Smart.</b></p>
+										<p class="text margin-center"> When it comes to distinguishing your company from your competitors, we have the marketing tools to help. From a custom ad design shop that gives you the look and feel of a top ad agency to press releases, radio scripts, new marketing images, videos, and more — get the look. </p>
+										<a href="/partner-resources/marketing" class="btn btn-primary margin-center"> Marketing Tools </a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lenoxpros-financial-tools?scl=1&fmt=png-alpha" alt="delivering HVAC proposal and financing options"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10"> Finance Tools </h3>
+										<p class="sub maven align-center mb20"><b> Financial Options To Help You Win Your Share of the Market. </b></p>
+										<p class="text margin-center">Offering financing to your customers is an easy way to save those hard-earned sales. The finance option can become one of your strongest tools. In the U.S., we partner with Service Finance Company, and in Canada it’s Financeit. Now you can offer customers financial solutions. </p>
+										<a href="/partner-resources/financial" class="btn btn-primary margin-center"> HVAC Financing Tools </a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="tall mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lenoxpros-ipad?scl=1&fmt=png-alpha" alt="Search Lennox Documents"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10"> Document Library </h3>
+										<p class="sub maven align-center mb20"><b>No Matter Where You Are, Get the Information You Need. </b></p>
+										<p class="text margin-center"> Get access to a powerful library of technical, marketing, warranty documents, product specs, installation instructions, and much more from your desktop, tablet or smartphone.</p>
+										<a href="/DocumentSearch" class="btn btn-primary margin-center"> Lennox Document Library </a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+						<div class="service s3 slider-wrap">
+							<div class="title h2 mb10 mobile">Dealer Tools</div>
+							<p class="description margin-center"><b>Transform your HVAC Business.</b><br>Simple digital solutions that make it easier to sell, install, and service Lennox equipment, helping you save time and build homeowner loyalty.</p>
+														
+							<div class="dot-wrap mb10">
+								<div class="wrapper">
+									<button class="slick-next">Next</button>
+									<div class="dots"></div>
+									<button class="slick-prev">Previous</button>
+								</div>
+							</div>
+							
+							<div class="service-slider actual-slider mb0">
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-service-dashboard-mobile-2x?scl=1&fmt=png-alpha" alt="Lennox Service Dashboard"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Service Dashboard</h3>
+										<p class="sub maven align-center mb20"><b>Discover Problems Before They Happen.</b></p>
+										<p class="text margin-center">Save time and money by already knowing system issues your customer is experiencing through alerts. With rapid response to equipment issues, you’re able to deliver quicker service knowing ahead of time the problem, solution, and parts and supplies you’re going to need.</p>
+										<a href="/service/dashboard/dealersearchpage" class="btn btn-primary margin-center"> View Dashboard</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-ecl-mobile-2x?scl=1&fmt=png-alpha" alt="Lennox Error Code Lookup Tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Error Code Lookup</h3>
+										<p class="sub maven align-center mb20"><b>Get In. Get Out. Get Faster!</b></p>
+										<p class="text margin-center">With over 150 error codes catalogued, techs can diagnose the problem at hand from their mobile device without relying or waiting on Technical Support. Error Code Lookup instantly identifies the Lennox error codes displayed from either a Lennox Smart Thermostat or directly from the unit.</p>
+										<a href="/error-code-lookup" class="btn btn-primary margin-center"> Error Code Lookup</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-oem-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros parts lookup tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Repair Part Finder</h3>
+										<p class="sub maven align-center mb20"><b>Fast and Convenient, on the Job or in the Shop.</b></p>
+										<p class="text margin-center">Search by Part, Serial or Model number to easily find OEM Repair Parts on your desktop or mobile device. In the LennoxPros mobile app, use the bar code scanner to scan the bar codes on Lennox equipment.</p>
+										<a href="/hvac-repair-part-finder" class="btn btn-primary margin-center"> Lennox Parts Lookup</a>
+									</div>
+								</div>
+
+
+								<div>
+									<div class="col-lg-5"> <img class="tall mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_slider-image-ahri-mobile-2x?scl=1&fmt=png-alpha" alt="LennoxPros ahri matchup"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10"> AHRI Matchup </h3>
+										<p class="sub maven align-center mb20"><b> You’re Guaranteed a Perfect Match Every Time. </b></p>
+										<p class="text margin-center"> It doesn’t matter if you’re matching heat pumps, Mini-Splits or furnaces, your equipment and components are AHRI certified. No more saving scraps of paper with reference numbers or reams of spreadsheets to match systems. </p>
+										<a href="/ahri" class="btn btn-primary margin-center"> AHRI Matchup Tool </a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-sales-dashboard?scl=1&fmt=png-alpha" alt="LennoxPros sales and lead dashboard"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Sales Dashboard</h3>
+										<p class="sub maven align-center mb20"><b>Real Time Stats Help You Make Quick, Strategic Sales Decisions. </b></p>
+										<p class="text margin-center">An enhanced dashboard gives you an easy to use snapshot of your team’s sales performance. Manage leads from creation, close of sale, post-installation, to follow-up. New Dashboard technology keeps your sales strategy and KPIs on target.</p>
+										<a href="/proposal-tool/lead/dashboard" class="btn btn-primary margin-center"> View Your Sales Dashboard </a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-load_calculator?scl=1&fmt=png-alpha" alt="manual j load calculator tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Load Calculator</h3>
+										<p class="sub maven align-center mb20"><b>What Used To Take a Few Hours Now Takes Thirty Minutes or Less. </b></p>
+										<p class="text margin-center">Perform load calculations quickly and efficiently. Give your customers an ACCA approved professional report that includes detailed worksheet calculations, so they know the needed airflow for each room. </p>
+										<a href="/load-calc" class="btn btn-primary margin-center"> Create A MJ8 Load Report</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-proposal-builder?scl=1&fmt=png-alpha" alt="HVAC Proposal Tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Proposal Builder</h3>
+										<p class="sub maven align-center mb20"><b>Create Customer-Specific Proposals That Make Closing the Sale Quicker and Easier. </b></p>
+										<p class="text margin-center">Get to ‘yes’ faster and easier when your customers can visually see — equipment costs, product comparisons, financing options, project costs, and labor rates so they feel good about their buying decisions. </p>
+										<a href="/proposal-tool/lead/create" class="btn btn-primary margin-center">Build A HVAC Proposal</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="col-lg-5"> <img class="mb15" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-cross-ref?scl=1&fmt=png-alpha" alt="hvac parts cross reference tool"> </div>
+									<div class="col-lg-7 align-left">
+										<h3 class="title h3 align-center mb10">Cross Reference</h3>
+										<p class="sub maven align-center mb20"><b>Improved Categories Added To Help You Speed Up the Process.</b></p>
+										<p class="text margin-center">Using our new eight new parts categories, you can easily find what you need even faster than before. Use on your desktop or mobile. </p>
+										<a href="/cross-reference" class="btn btn-primary margin-center"> Cross Reference Tool</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- end sliders-container -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+	<section class="why-more-options">
+		<div class="bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 white align-center">
+						<p class="h2 margin-center mb30">More LennoxPros Options</p>
+						<p class="mb20">Ready to ramp up your team’s HVAC knowledge? Need to find a Lennox Store closest to your location? LennoxPros offers these great additional resources to help keep your business competitive.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="why-lls align-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 lt">
+					<h2 class="mb20 margin-center mobile">Lennox Learning Solutions</h2>
+					<p class="text align-left margin-center">Our Lennox Learning Solutions has training courses designed for the novice or pro. Find essential HVAC training courses and education to help you or your team increase working knowledge and better proficiency on the job.</p>
+					<a class="btn btn-primary mb40" href="/hvac-training">Start Learning</a>
+				</div>
+				<div class="col-lg-6 rt">
+					<h2 class="mb20 margin-center desktop">Lennox Learning Solutions</h2>
+					<img class="mb24" src="https://images.lennoxpros.com/is/image/LennoxIntl/2005-why-lennoxpros_page-lls-image?scl=1&fmt=png-alpha" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="why-store-locator align-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 lt">
+					<h2 class="mb20 mobile">Lennox Store Locator</h2>
+					<p class="text align-left margin-center">The Lennox Store Locator will help you find important local store information like address, contact information, and store hours.</p>
+					<a class="btn btn-primary mb40" href="/stores/store-locations">Find a Store</a>
+				</div>
+
+				<div class="col-lg-6 rt">
+					<h2 class="mb20 desktop">Lennox Store Locator</h2>
+					<img class="mb24" src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-ipad-img?scl=1&fmt=png-alpha" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section class="why-end align-center ">
+		<p class="maven h3 mb30 margin-center">Sign up for a free account today and unlock the full potential of LennoxPros.com</p>
+		<a class="btn btn-primary mb20" href="/registration">Create an Account</a>
+		<p class="">Already have an account? <a href="#" id="samlSignInLink">Log in here.</a></p>
+	</section>
+
+
+
+
+	
+	<script src="https://images.lennoxpros.com/is/content/LennoxIntl/web-dev/other/js/slick-min.js"></script>
+	<script>
+		$(function(){
+
+			// Hide/Show Sliders
+			var sliderPicker;
+			$('.desktop-control button').on('click', function(){
+				$('.desktop-control button').removeClass('active');
+				$(this).addClass('active');
+
+				// hide all sliders
+				$('.slider-wrap').hide();
+
+				// get id ex s1, s2, s3
+				sliderPicker = $(this).attr('id');
+				
+				// change id to class and show slider
+				$('.' + sliderPicker ).show();
+				
+				$('.' + sliderPicker + ' .actual-slider').slick('refresh');
+			});
+
+
+			// Text under icon buttons
+			var a = ["Online Product Catalog", "Pricing and<br> Availability", "Account and<br> User<br>  Management", "Mobile App", "Repair Parts<br> Finder", "AHRI<br> Matchup"];
+			var b = ["Warranty<br> Lookup", "Learning<br> Solutions", "Marketing", "Finance<br> Tools", "Document<br> Library"];
+			var c = ["Service<br> Dashboard", "Error Code<br> Lookup", "Repair Part <br>Finder", "AHRI<br> Matchup", "Sales <br>Dashboard", "Load <br>Calculator", "Proposal<br> Builder", "Cross<br> Reference"];
+
+
+			$('.comm-slider').slick({
+				adaptiveHeight: true,
+				cssEase: "ease-in-out",
+				nextArrow: $('.comm .dot-wrap .slick-next'),
+				prevArrow: $('.comm .dot-wrap .slick-prev'),
+				dots: true,
+				appendDots: $('.comm .dots'),
+				customPaging: function(slider, i) { 
+					ii = parseInt(i) + 1;
+					
+					return '<div class="button-wrap">' +
+								'<button class="tab margin-center">' +
+									'<img src="https://images.lennoxpros.com/is/image/LennoxIntl/2021-why-lennoxpros-comm_' + ii + '-2x?scl=1&fmt=png-alpha">' +
+								'</button>' +
+								'<div class="hover-bar"></div>' +
+								'<span class="hover-text">' + a[i] + '</span> ' +
+							'</div>';
+				}
+			});
+
+			// Slick Carousel Init
+			$('.resources-slider').slick({
+				adaptiveHeight: true,
+				cssEase: "ease-in-out",
+				nextArrow: $('.resources .dot-wrap .slick-next'),
+				nextArrow: $('.resources .dot-wrap .slick-next'),
+				prevArrow: $('.resources .dot-wrap .slick-prev'),
+				dots: true,
+				appendDots: $('.resources .dots'),
+				customPaging: function(slider, i) { 
+					ii = parseInt(i) + 1;
+
+					return '<div class="button-wrap">' +
+								'<button class="tab margin-center">' +
+									'<img src="https://images.lennoxpros.com/is/image/LennoxIntl/2021-why-lennoxpros-resources_' + ii + '-2x?scl=1&fmt=png-alpha">' +
+								'</button>' +
+								'<div class="hover-bar"></div>' +
+								'<span class="hover-text">' + b[i] + '</span> ' +
+							'</div>';
+				}
+			});
+
+
+			$('.service-slider').slick({
+				adaptiveHeight: true,
+				cssEase: "ease-in-out",
+				nextArrow: $('.service .dot-wrap .slick-next'),
+				prevArrow: $('.service .dot-wrap .slick-prev'),
+				dots: true,
+				appendDots: $('.service .dots'),
+				customPaging: function(slider, i) { 
+					ii = parseInt(i) +1;
+					return '<div class="button-wrap">' +
+								'<button class="tab margin-center">' +
+									'<img src="https://images.lennoxpros.com/is/image/LennoxIntl/why-lennoxpros-dealer-pros-' + ii + '-2?scl=1&fmt=png-alpha">' +
+								'</button>' +
+								'<div class="hover-bar"></div>' +
+								'<span class="hover-text">' + c[i] + '</span> ' +
+							'</div>';
+				}
+			});
+		});
+
+	</script>
+
+</div>
